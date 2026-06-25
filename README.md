@@ -168,9 +168,6 @@ Honest accounting of the current state. The shipped tools are usable today. Ever
 | Shipped | **Prompt Builder** | Structured strategy specification for repeatable testing |
 | Shipped | **Backtest Validator** | Sign-flip permutation, Monte Carlo bootstrap, walk-forward analysis |
 | Shipped | **Portfolio Analyzer** | Correlation, drawdown stacking, allocation review |
-| In Progress | **Deflated Sharpe Ratio** | Selection-bias-adjusted Sharpe per Bailey & Lopez de Prado |
-| In Progress | **Combinatorially Purged Cross-Validation** | CPCV for time-series-aware validation |
-| Planned | **Regime detection** | Tag drawdown periods by market regime for context-aware evaluation |
 | Planned | **PropFirm Validator** | Simulation of real prop firm rule sets against strategy results. In development, not yet released. |
 
 If you have feedback on priorities, open an issue.
