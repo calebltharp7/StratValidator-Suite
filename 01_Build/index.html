@@ -3,16 +3,26 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%234a90d9' rx='18' width='100' height='100'/><text x='50' y='68' text-anchor='middle' font-size='48' font-weight='bold' fill='white'>NS</text></svg>"/>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2339d0d8' rx='18' width='100' height='100'/><text x='50' y='68' text-anchor='middle' font-size='48' font-weight='bold' fill='white'>PL</text></svg>"/>
 <title>Plumbline Stage I: Build &mdash; Prompt Builder v2.0</title>
 <link rel="stylesheet" href="css/app.css"/>
+<style>
+/* Plumbline brand override — supersedes prior .hdr-logo "NS" square */
+.hdr-logo{
+  width:10px;height:10px;background:#39d0d8;
+  box-shadow:0 0 12px #39d0d8;border-radius:2px;
+  display:inline-block;padding:0;font-size:0;line-height:0;color:transparent;
+  align-self:center;margin-right:4px;flex-shrink:0;
+}
+.hdr-l{display:flex;align-items:center;gap:10px;}
+</style>
 </head>
 <body>
 <div id="toastEl" class="toast" style="display:none"></div>
 <!-- HEADER -->
 <header class="hdr">
  <div class="hdr-l">
- <div class="hdr-logo">NS</div>
+ <div class="hdr-logo" aria-hidden="true"></div>
  <span class="hdr-t">Plumbline Stage I: Build &mdash; Prompt Builder</span>
  <span class="hdr-v">v2.0</span>
  </div>
@@ -116,10 +126,10 @@
  <div class="sec">
   <div class="sec-h"><div class="sec-n">4</div><div class="sec-tg"><div class="sec-t">Strategy Type</div><div class="sec-sub">What type of trading strategy are you building? Select one (optional).</div></div></div>
   <div class="cards" id="strategyTypeGrid">
-   <div class="card" data-strategy="meanReversion"><div class="card-ck">✓</div><div class="card-i">🔄</div><div class="card-n">Mean Reversion</div><div class="card-d">Fade deviations from a statistical mean. Enter counter-trend at extremes, exit on return to equilibrium.</div><span class="card-tag">~150 tokens</span><span class="card-rec">★ PRESET</span></div>
-   <div class="card" data-strategy="trendFollowing"><div class="card-ck">✓</div><div class="card-i">📈</div><div class="card-n">Trend Following</div><div class="card-d">Ride established momentum. Enter on trend confirmation, trail stops, let winners run.</div><span class="card-tag">~150 tokens</span><span class="card-rec">★ PRESET</span></div>
-   <div class="card" data-strategy="breakout"><div class="card-ck">✓</div><div class="card-i">💥</div><div class="card-n">Breakout</div><div class="card-d">Trade range expansions. Enter on consolidation breaks with volume confirmation, target continuation.</div><span class="card-tag">~150 tokens</span><span class="card-rec">★ PRESET</span></div>
-   <div class="card" data-strategy="scalping"><div class="card-ck">✓</div><div class="card-i">⚡</div><div class="card-n">Scalping</div><div class="card-d">Capture small, rapid profits from micro price movements. Quick entries and exits on ultra-short timeframes.</div><span class="card-tag">~150 tokens</span><span class="card-rec">★ PRESET</span></div>
+   <div class="card" data-strategy="meanReversion"><div class="card-ck">&#x2713;</div><div class="card-i">&#x1F504;</div><div class="card-n">Mean Reversion</div><div class="card-d">Fade deviations from a statistical mean. Enter counter-trend at extremes, exit on return to equilibrium.</div><span class="card-tag">~150 tokens</span><span class="card-rec">&#x2605; PRESET</span></div>
+   <div class="card" data-strategy="trendFollowing"><div class="card-ck">&#x2713;</div><div class="card-i">&#x1F4C8;</div><div class="card-n">Trend Following</div><div class="card-d">Ride established momentum. Enter on trend confirmation, trail stops, let winners run.</div><span class="card-tag">~150 tokens</span><span class="card-rec">&#x2605; PRESET</span></div>
+   <div class="card" data-strategy="breakout"><div class="card-ck">&#x2713;</div><div class="card-i">&#x1F4A5;</div><div class="card-n">Breakout</div><div class="card-d">Trade range expansions. Enter on consolidation breaks with volume confirmation, target continuation.</div><span class="card-tag">~150 tokens</span><span class="card-rec">&#x2605; PRESET</span></div>
+   <div class="card" data-strategy="scalping"><div class="card-ck">&#x2713;</div><div class="card-i">&#x26A1;</div><div class="card-n">Scalping</div><div class="card-d">Capture small, rapid profits from micro price movements. Quick entries and exits on ultra-short timeframes.</div><span class="card-tag">~150 tokens</span><span class="card-rec">&#x2605; PRESET</span></div>
   </div>
  </div>
  <!-- 5 Sessions -->
@@ -192,16 +202,16 @@ Example: Build a mean-reversion strategy on MES 5-min using Bollinger Bands for 
  <div class="tsf"><label class="tslbl">&#x1F5A5;&#xFE0F; Environment <span class="tsopt">(optional)</span></label><input class="tsinp" id="ts_env" placeholder="e.g., NT8 8.1.4.1, Windows 11, NQ 5-min, Tick Replay ON"/></div>
  <div class="tsf fw"><label class="tslbl">&#x1F4DB; Error Output <span class="tsopt">(optional)</span></label><textarea class="tstxa" id="ts_error" placeholder="Paste exact error message, Output window log, or compiler error..."></textarea>
   <div class="ts-upload-row">
-    <label class="ts-upload-btn" for="tsErrorFile">📷 Upload Error Screenshot</label>
+    <label class="ts-upload-btn" for="tsErrorFile">&#x1F4F7; Upload Error Screenshot</label>
     <input type="file" id="tsErrorFile" accept="image/png,image/jpeg,image/gif,image/webp" style="display:none"/>
-    <span class="ts-upload-hint">PNG, JPG, GIF, or WEBP — max 5 MB. Text will be auto-extracted.</span>
+    <span class="ts-upload-hint">PNG, JPG, GIF, or WEBP &mdash; max 5 MB. Text will be auto-extracted.</span>
   </div>
   <div class="ts-img-preview" id="tsErrorPreview" style="display:none">
     <img id="tsErrorImg" alt="Error screenshot preview"/>
     <div class="ts-ocr-status" id="tsOcrStatus" style="display:none">
-      <span class="ts-ocr-spinner"></span> Extracting text…
+      <span class="ts-ocr-spinner"></span> Extracting text&hellip;
     </div>
-    <button type="button" class="ts-img-clear" id="tsErrorImgClear">✕ Remove</button>
+    <button type="button" class="ts-img-clear" id="tsErrorImgClear">&#x2715; Remove</button>
   </div>
 </div>
  <div class="tsf fw"><label class="tslbl">&#x1F501; Steps to Reproduce <span class="tsopt">(optional)</span></label><textarea class="tstxa" id="ts_steps" placeholder="1. Open Strategy Analyzer
