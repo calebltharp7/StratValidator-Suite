@@ -3,40 +3,37 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>StratValidator: Free Backtest & Strategy Validation Tools</title>
-<meta name="description" content="StratValidator Suite: free open-source NinjaTrader tools for backtest validation, Monte Carlo, walk-forward, and prop firm edge detection.">
-<link rel="canonical" href="https://calebltharp7.github.io/StratValidator-Suite/">
-
+<title>Plumbline Trading Suite: Free Backtest & Strategy Validation Tools</title>
+<meta name="description" content="Plumbline Trading Suite: free open-source NinjaTrader tools for backtest validation, Monte Carlo, walk-forward, and prop firm edge detection.">
+<link rel="canonical" href="https://calebltharp7.github.io/PlumblineTrading-Suite/">
 <!-- Open Graph / Facebook / LinkedIn -->
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://calebltharp7.github.io/StratValidator-Suite/">
-<meta property="og:title" content="StratValidator: Free Backtest & Strategy Validation Tools">
-<meta property="og:description" content="Free open-source NinjaTrader 8 toolkit. Two live tools: Prompt Builder for strategy specs, plus Monte Carlo and walk-forward backtest validation.">
-<meta property="og:image" content="https://calebltharp7.github.io/StratValidator-Suite/assets/og-image.png">
+<meta property="og:url" content="https://calebltharp7.github.io/PlumblineTrading-Suite/">
+<meta property="og:title" content="Plumbline Trading Suite: Free Backtest & Strategy Validation Tools">
+<meta property="og:description" content="Free open-source NinjaTrader 8 toolkit. Two live tools: Stage I Build for strategy specs, plus Stage II Backtest Verification with Monte Carlo and walk-forward analysis.">
+<meta property="og:image" content="https://calebltharp7.github.io/PlumblineTrading-Suite/assets/og-image.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="StratValidator Suite — Statistical validation tools for trading strategies">
-<meta property="og:site_name" content="StratValidator Suite">
+<meta property="og:image:alt" content="Plumbline Trading Suite — Statistical validation tools for trading strategies">
+<meta property="og:site_name" content="Plumbline Trading Suite">
 <meta property="og:locale" content="en_US">
-
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://calebltharp7.github.io/StratValidator-Suite/">
-<meta name="twitter:title" content="StratValidator: Free Backtest & Strategy Validation Tools">
+<meta name="twitter:url" content="https://calebltharp7.github.io/PlumblineTrading-Suite/">
+<meta name="twitter:title" content="Plumbline Trading Suite: Free Backtest & Strategy Validation Tools">
 <meta name="twitter:description" content="Free NinjaTrader 8 tools to prove your backtest is real. Sign-flip permutation, Monte Carlo, walk-forward. Runs locally.">
-<meta name="twitter:image" content="https://calebltharp7.github.io/StratValidator-Suite/assets/og-image.png">
-<meta name="twitter:image:alt" content="StratValidator Suite — Statistical validation tools for trading strategies">
-
+<meta name="twitter:image" content="https://calebltharp7.github.io/PlumblineTrading-Suite/assets/og-image.png">
+<meta name="twitter:image:alt" content="Plumbline Trading Suite — Statistical validation tools for trading strategies">
 <!-- JSON-LD Structured Data -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "StratValidator Suite",
-  "alternateName": "StratValidator",
+  "name": "Plumbline Trading Suite",
+  "alternateName": "PlumblineTrading",
   "description": "Free open-source toolkit for NinjaTrader 8 that validates trading strategies through backtest integrity checks, Monte Carlo simulation, walk-forward analysis, and prop firm edge detection.",
-  "url": "https://calebltharp7.github.io/StratValidator-Suite/",
-  "image": "https://calebltharp7.github.io/StratValidator-Suite/assets/og-image.png",
+  "url": "https://calebltharp7.github.io/PlumblineTrading-Suite/",
+  "image": "https://calebltharp7.github.io/PlumblineTrading-Suite/assets/og-image.png",
   "applicationCategory": "FinanceApplication",
   "applicationSubCategory": "Trading Strategy Validation",
   "operatingSystem": "Windows",
@@ -66,7 +63,7 @@
     "name": "Caleb Tharp",
     "url": "https://github.com/calebltharp7"
   },
-  "codeRepository": "https://github.com/calebltharp7/StratValidator-Suite",
+  "codeRepository": "https://github.com/calebltharp7/PlumblineTrading-Suite",
   "programmingLanguage": "Python",
   "audience": {
     "@type": "Audience",
@@ -74,7 +71,6 @@
   }
 }
 </script>
-
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root {
@@ -107,7 +103,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* Subtle background texture */
 body::before {
   content: "";
   position: fixed;
@@ -128,7 +123,6 @@ body::before {
   position: relative;
   z-index: 1;
 }
-/* ---------- TOP NAV ---------- */
 .topnav {
   padding: 24px 0;
   display: flex;
@@ -170,7 +164,6 @@ body::before {
 @media (max-width: 640px) {
   .nav-links { display: none; }
 }
-/* ---------- HERO ---------- */
 .hero {
   padding: 80px 0 96px;
   position: relative;
@@ -297,7 +290,6 @@ body::before {
   padding: 5px 12px;
   border-radius: 50px;
 }
-/* ---------- SECTION SHARED ---------- */
 section { padding: 64px 0; position: relative; }
 .section-label {
   font-size: 12px;
@@ -327,7 +319,6 @@ section { padding: 64px 0; position: relative; }
   border-top: 1px solid var(--border-soft);
   margin: 0;
 }
-/* ---------- TOOLS GRID ---------- */
 .tools-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -384,7 +375,6 @@ section { padding: 64px 0; position: relative; }
   color: var(--text-dim);
   line-height: 1.6;
 }
-/* ---------- TOOL CARD: LINK + DISABLED + BADGES ---------- */
 .tool-card-link {
   display: block;
   text-decoration: none;
@@ -432,7 +422,6 @@ section { padding: 64px 0; position: relative; }
   background: rgba(240, 136, 62, 0.1);
   border: 1px solid rgba(240, 136, 62, 0.3);
 }
-/* ---------- WHY EXISTS ---------- */
 .why p {
   font-size: 16px;
   color: var(--text-dim);
@@ -441,7 +430,6 @@ section { padding: 64px 0; position: relative; }
   margin-bottom: 16px;
 }
 .why p strong { color: var(--text); font-weight: 600; }
-/* ---------- METHODOLOGY ---------- */
 .method-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -495,7 +483,6 @@ section { padding: 64px 0; position: relative; }
   color: var(--text-faint);
   margin-right: 8px;
 }
-/* ---------- QUICK EXAMPLE ---------- */
 .example-block {
   background: var(--code-bg);
   border: 1px solid var(--border);
@@ -563,7 +550,6 @@ section { padding: 64px 0; position: relative; }
   line-height: 1.6;
 }
 .verdict strong { color: var(--danger); }
-/* ---------- NOT FOR ---------- */
 .not-list {
   list-style: none;
   margin-top: 24px;
@@ -586,7 +572,6 @@ section { padding: 64px 0; position: relative; }
   flex-shrink: 0;
   line-height: 1.3;
 }
-/* ---------- ROADMAP ---------- */
 .roadmap-list {
   list-style: none;
   margin-top: 20px;
@@ -628,7 +613,6 @@ section { padding: 64px 0; position: relative; }
   border: 1px solid var(--border-soft);
 }
 .roadmap-item-text strong { color: var(--text); font-weight: 600; }
-/* ---------- FOOTER ---------- */
 footer {
   border-top: 1px solid var(--border-soft);
   padding: 48px 0 32px;
@@ -690,13 +674,13 @@ footer {
 <!-- ============ TOP NAV ============ -->
 <div class="container">
   <nav class="topnav">
-    <a href="./" class="brand-mark" aria-label="StratValidator — home">StratValidator</a>
+    <a href="./" class="brand-mark" aria-label="PlumblineTrading — home">PlumblineTrading</a>
     <div class="nav-links">
       <a href="#tools">Tools</a>
       <a href="#methodology">Methodology</a>
       <a href="#example">Example</a>
       <a href="#roadmap">Roadmap</a>
-      <a href="https://github.com/calebltharp7/StratValidator-Suite" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://github.com/calebltharp7/PlumblineTrading-Suite" target="_blank" rel="noopener">GitHub</a>
     </div>
   </nav>
 </div>
@@ -704,7 +688,7 @@ footer {
 <header class="hero">
   <div class="container">
     <div class="brand-header">
-      <div class="brand-name">StratValidator <span class="version-badge">v0.1.0 &middot; Beta</span></div>
+      <div class="brand-name">Plumbline Trading Suite <span class="version-badge">v0.1.0 &middot; Beta</span></div>
       <div class="brand-meta">
         Open Source <span class="dot">&middot;</span> MIT License <span class="dot">&middot;</span> Built for retail traders
       </div>
@@ -716,11 +700,11 @@ footer {
       A free, open-source toolkit that turns vague trading ideas into testable strategy specs, then proves whether the backtest survives Monte Carlo and walk-forward analysis.
     </p>
     <div class="cta-row">
-      <a href="https://github.com/calebltharp7/StratValidator-Suite" class="btn-primary" target="_blank" rel="noopener">
+      <a href="https://github.com/calebltharp7/PlumblineTrading-Suite" class="btn-primary" target="_blank" rel="noopener">
         View on GitHub
         <span aria-hidden="true">&rarr;</span>
       </a>
-      <a href="https://github.com/calebltharp7/StratValidator-Suite" class="btn-star" target="_blank" rel="noopener">
+      <a href="https://github.com/calebltharp7/PlumblineTrading-Suite" class="btn-star" target="_blank" rel="noopener">
         &#9733; Star
         <span class="count">on GitHub</span>
       </a>
@@ -745,19 +729,19 @@ footer {
       Together they form a complete pre-deployment validation workflow.
     </p>
     <div class="tools-grid">
-      <a href="1_StratValidator_Prompt_Builder/" class="tool-card tool-card-link" aria-label="Open the Prompt Builder tool">
-        <div class="tool-tag">01 &middot; Specification</div>
-        <h3>Prompt Builder <span class="status-badge live">Live</span></h3>
+      <a href="01_Build/" class="tool-card tool-card-link" aria-label="Open Plumbline Stage I: Build">
+        <div class="tool-tag">Stage I &middot; Specification</div>
+        <h3>Plumbline Stage I: Build <span class="status-badge live">Live</span></h3>
         <p>Structured strategy specification &mdash; turn vague trading ideas into testable, repeatable strategy definitions.</p>
       </a>
-      <a href="2_StratValidator_Backtest_Validator/" class="tool-card tool-card-link" aria-label="Open the Backtest Validator tool">
-        <div class="tool-tag">02 &middot; Statistical Testing</div>
-        <h3>Backtest Validator <span class="status-badge live">Live</span></h3>
+      <a href="02_Backtest_Verification/" class="tool-card tool-card-link" aria-label="Open Plumbline Stage II: Backtest Verification">
+        <div class="tool-tag">Stage II &middot; Statistical Testing</div>
+        <h3>Plumbline Stage II: Backtest Verification <span class="status-badge live">Live</span></h3>
         <p>Sign-flip permutation, Monte Carlo bootstrap, and walk-forward analysis to detect overfitting in your strategy results.</p>
       </a>
       <article class="tool-card tool-card-disabled" aria-disabled="true">
-        <div class="tool-tag">03 &middot; Risk Analysis</div>
-        <h3>Portfolio Analyzer <span class="status-badge soon">Coming Soon</span></h3>
+        <div class="tool-tag">Stage III &middot; Risk Analysis</div>
+        <h3>Plumbline Stage III: Portfolio Analysis <span class="status-badge soon">Coming Soon</span></h3>
         <p>Correlation analysis, drawdown stacking, and risk exposure modeling across multiple strategies.</p>
       </article>
     </div>
@@ -780,7 +764,7 @@ footer {
       in retail workflows. The math is straightforward. The tooling was missing.
     </p>
     <p>
-      StratValidator is an attempt to close that gap. It is not a trading platform. It is not a signal service.
+      Plumbline Trading Suite is an attempt to close that gap. It is not a trading platform. It is not a signal service.
       It is a set of small, focused tools that answer one question: <strong>given the trades I observed, how confident
       should I be that the underlying strategy has a real edge?</strong>
     </p>
@@ -793,7 +777,7 @@ footer {
     <span class="section-label">Methodology</span>
     <h2 class="section-title">How the validation works</h2>
     <p class="section-lead">
-      The Backtest Validator applies three independent statistical tests. Passing one is not enough.
+      Plumbline Stage II: Backtest Verification applies three independent statistical tests. Passing one is not enough.
       A strategy that fails any of them is flagged for further investigation.
     </p>
     <div class="method-grid">
@@ -831,7 +815,7 @@ footer {
       The kind of result that is easy to miss when only watching win rate and profit factor.
     </p>
     <div class="example-block">
-      <div class="example-header">backtest-validator &middot; example.csv</div>
+      <div class="example-header">plumbline-stage-ii &middot; example.csv</div>
       <span class="example-label">Surface metrics</span>
       <div class="example-line"><span class="key">Total trades</span><span class="val">248</span></div>
       <div class="example-line"><span class="key">Win rate</span><span class="val">62.1%</span></div>
@@ -884,19 +868,19 @@ footer {
     <ul class="roadmap-list">
       <li>
         <span class="roadmap-status shipped">Shipped</span>
-        <span class="roadmap-item-text"><strong>Prompt Builder</strong> &mdash; structured strategy specification for repeatable testing.</span>
+        <span class="roadmap-item-text"><strong>Plumbline Stage I: Build</strong> &mdash; structured strategy specification for repeatable testing.</span>
       </li>
       <li>
         <span class="roadmap-status shipped">Shipped</span>
-        <span class="roadmap-item-text"><strong>Backtest Validator</strong> &mdash; sign-flip permutation, Monte Carlo bootstrap, walk-forward analysis. Shipped &mdash; statistical validation suite is live.</span>
+        <span class="roadmap-item-text"><strong>Plumbline Stage II: Backtest Verification</strong> &mdash; sign-flip permutation, Monte Carlo bootstrap, walk-forward analysis. Statistical validation suite is live.</span>
       </li>
       <li>
         <span class="roadmap-status future">Planned</span>
-        <span class="roadmap-item-text"><strong>Portfolio Analyzer</strong> &mdash; correlation, drawdown stacking, allocation review. Planned after Backtest Validator ships.</span>
+        <span class="roadmap-item-text"><strong>Plumbline Stage III: Portfolio Analysis</strong> &mdash; correlation, drawdown stacking, allocation review across multiple strategies.</span>
       </li>
       <li>
         <span class="roadmap-status future">Planned</span>
-        <span class="roadmap-item-text"><strong>PropFirm Validator</strong> &mdash; simulation of real prop firm rule sets against strategy results. In development, not yet released.</span>
+        <span class="roadmap-item-text"><strong>Plumbline Stage IV: PropFirm Validator</strong> &mdash; simulation of real prop firm rule sets against strategy results. In development, not yet released.</span>
       </li>
     </ul>
   </div>
@@ -907,14 +891,14 @@ footer {
     <div class="footer-row">
       <div class="footer-col">
         <h5>Project</h5>
-        <a href="https://github.com/calebltharp7/StratValidator-Suite" target="_blank" rel="noopener">View on GitHub</a>
+        <a href="https://github.com/calebltharp7/PlumblineTrading-Suite" target="_blank" rel="noopener">View on GitHub</a>
         <a href="#methodology">Methodology</a>
         <a href="#roadmap">Roadmap</a>
       </div>
       <div class="footer-col">
         <h5>Community</h5>
-        <a href="https://github.com/calebltharp7/StratValidator-Suite/issues" target="_blank" rel="noopener">Open an issue</a>
-        <a href="https://github.com/calebltharp7/StratValidator-Suite/discussions" target="_blank" rel="noopener">Discussions</a>
+        <a href="https://github.com/calebltharp7/PlumblineTrading-Suite/issues" target="_blank" rel="noopener">Open an issue</a>
+        <a href="https://github.com/calebltharp7/PlumblineTrading-Suite/discussions" target="_blank" rel="noopener">Discussions</a>
         <p>Have a question or want to collaborate? Open an issue on GitHub.</p>
       </div>
       <div class="footer-col">
@@ -931,7 +915,7 @@ footer {
         MIT Licensed
       </div>
       <div class="footer-newsletter">
-        <a href="https://github.com/calebltharp7/StratValidator-Suite" target="_blank" rel="noopener noreferrer">★ Watch on GitHub for release notifications</a>
+        <a href="https://github.com/calebltharp7/PlumblineTrading-Suite" target="_blank" rel="noopener noreferrer">★ Watch on GitHub for release notifications</a>
       </div>
     </div>
   </div>
